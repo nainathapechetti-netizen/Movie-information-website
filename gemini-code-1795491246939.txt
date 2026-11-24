@@ -1,0 +1,25 @@
+movieverse/
+├── backend/
+│   ├── app/
+│   │   ├── main.py            # FastAPI routes, TMDB client + fallback seed data
+│   │   ├── models.py          # Pydantic schemas for movies, reviews, lists
+│   │   └── database.py        # Supabase client & SQL schema helpers
+│   ├── schema.sql             # PostgreSQL tables for Supabase
+│   ├── requirements.txt
+│   └── .env.example
+└── frontend/
+    ├── index.html
+    ├── package.json
+    ├── .env.example
+    └── src/
+        ├── App.jsx            # Routing, dark/light theme, state store
+        ├── api/movieverse.js  # Backend/TMDB service with rich sample fallback
+        ├── data/sampleMovies.js
+        ├── components/
+        │   ├── Navbar.jsx
+        │   ├── HeroBanner.jsx
+        │   ├── MovieCard.jsx
+        │   ├── TrailerModal.jsx
+        │   ├── MovieDetailsModal.jsx
+        │   └── UserListsDrawer.jsx
+        └── index.css
